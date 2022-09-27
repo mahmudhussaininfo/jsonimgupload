@@ -1,0 +1,49 @@
+<div class="container my-5 studentform">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <a href="/student" class="btn btn-success">
+                Home
+            </a><br> <br>
+            <div class="card shadow">
+                <div class="card-header">
+                    <h2>Student Form</h2>
+                </div>
+                <div class="card-body">
+                    <form action="/student/create" method="post" enctype="multipart/form-data">
+                        <div class="my-3">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" class="form-control">
+                        </div>
+                        <div class="my-3">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" class="form-control">
+                        </div>
+                        <div class="my-3">
+                            <label for="cell">Cell</label>
+                            <input type="text" name="phone" class="form-control">
+                        </div>
+                        <div class="my-3">
+                            <label for="location">Location</label>
+                            <select name="location" id="" class="form-control">
+                                <option value="select">-select-</option>
+                                <option value="sylhet">-Sylhet-</option>
+                                <option value="dhaka">-Dhaka-</option>
+                                <option value="chittagong">-Chittagong-</option>
+                            </select>
+                        </div>
+                        <div class="my-3">
+                            <label for="photo">Photo</label>
+                            <img src="" class="preview-student" alt="">
+                            <input type="file" name="student-multer" id="uploadphoto" class="">
+                        </div>
+                        <div class="my-3">
+                            <input type="submit" id="" class="btn btn-primary w-100">
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
